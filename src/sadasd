@@ -1,0 +1,208 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f0f0;
+  
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+
+
+form {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: fit-content;
+  /* margin: 0 auto; */
+  /* margin-top: 70px; */
+}
+
+.searchBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+
+}
+.searchFlight {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(3,80px);
+  gap: 10px;
+  background-color: white;
+  height: 200px;
+  flex-wrap: wrap;
+  width: 500px;
+  height: fit-content;
+  padding-top: 15px;
+  border-radius: 5px;
+  top: 400px;
+  left: 50px;
+  margin-top: 31%;
+  margin-left: 36%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* vertical-align: middle; */
+  /* margin: 0 auto; */
+  
+  
+}
+
+.destination {
+  display: flex;  
+  text-align: left;
+  margin-left: 20px;
+}
+label,
+.homeSearchInputLabel{
+  text-align: left;
+  color: #002F5D;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+input {
+  height: 30px;
+  padding: 5px;
+}
+select {
+  outline: none;
+}
+input::placeholder {
+  padding-left: 5px;
+  font-size: 14px;
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+  position: absolute;
+  color: white;
+}
+
+.desc {
+  margin-bottom: 250px;
+  position: absolute;
+  color: white;
+  width: 50%;
+  text-align: left;
+  margin-left: -50px;
+}
+
+
+
+
+h2{
+  position: absolute;
+  color: white;
+}
+
+.notification {
+  width: 100px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar{
+  display: flex;
+  padding-left: 20px;
+  background: black;
+  justify-content: space-between;
+  color: white;
+}
+
+.depature-date,
+.return-date{
+  width: 195px;
+  display: block;
+}
+
+span {
+  color:red;
+  font-size: small;
+}
+.table {
+  position: absolute;
+  width: 100%;
+  max-height: 300px;
+  min-width: 100px;
+  /* margin: 0 auto; */
+  margin-top: -300px;
+  overflow: auto;
+}
+table {
+  background-color: white;
+  text-align: center;
+  width: 700px;
+  /* margin: 0 auto; */
+  
+  border-radius: 5px;
+  overflow: scroll;
+}
+thead {
+ color: black;
+  background-color: #0EFF17;
+}
+
+ th, td {
+  padding :10px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  form {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    
+  }
+
+  .searchFlight {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+
+    padding-top: 15px;
+    border-radius: 5px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    vertical-align: middle;
+    margin: 0 auto;
+    
+    
+  }
+}

@@ -1,0 +1,306 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke;
+}
+form{
+  width: 700px;
+  height: auto;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 70px);
+  /* grid-auto-flow: column; */
+  grid-auto-columns: 300px 100px;
+  /* padding-top: 20px; */
+  /* padding-left: 20px; */
+  /* margin: 20px 20px 0 20px; */
+  justify-items: center;
+  align-items: center;
+}
+.dateform{
+  grid-column: 1 / 4;
+  display: flex;
+  flex-direction:row ;
+  width: 100%;
+  padding-left: 33px;
+}
+.dateTo {
+  margin-left: 9px;
+}
+
+
+.form-container {
+  background-color: white;
+  width: 700px;
+  padding-bottom: 5px;
+  margin: 20px;
+}
+label {
+  margin-right: 15px;
+  font-weight: 500;
+
+}
+
+
+input::placeholder {
+  font-size: 12px;
+  text-align: center;
+  /* padding-left: 10px; */
+}
+
+/* .buttons  {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  
+} */
+
+.buttons i {
+  color: white;
+}
+table {
+background-color: white;
+text-align: center;
+width: 700px;
+/* margin: 0 auto; */
+margin: 20px;
+border-radius: 5px;
+/* overflow-y: auto; */
+/* height: 400px; */
+}
+thead {
+color: white;
+background-color: rgba(0, 0, 0, 0.73);
+ 
+}
+
+th, td {
+padding :5PX 0;
+
+}
+.navbar{
+  display: flex;
+  padding-left: 20px;
+  background: black;
+  justify-content: space-between;
+  color: white;
+}
+
+.fa {
+  color: rgba(0, 0, 0, 0.73);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* select {
+  font-size: small;
+  outline: none;
+}
+.main-header-value {
+  top: 85px;
+  border-radius: 5px;
+  right: 20px;
+  /* z-index: 2; 
+  position: absolute;
+  background-color: #ffffff;
+  /* width: 500px; 
+ 
+} */
+
+select {
+font-size: small;
+outline: none;
+}
+
+.table-container {
+position: relative;
+}
+.main-header-value {
+top: 85px;
+/* float: right; */
+border-radius: 5px;
+right: 20px;
+padding: 0;
+/* z-index: 2; */
+text-align: center;
+position: absolute;
+background-color: #ffffff;
+width: 500px
+}
+.btn {
+  width: 100px;
+}
+
+
+.origin-input,.destination-input{
+  width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .main-header-value {
+    
+    /* float: right; */
+    border-radius: 5px;
+    
+    padding: 0;
+    z-index: 2;
+    text-align: center;
+    position: inherit;
+    background-color: #ffffff;
+    width: 100%
+    }
+
+    .form-container{
+      position: relative;
+    }
+
+    .table-container {
+      position: inherit;
+      }
+    
+}
+
+
+@media screen and (max-width: 400px) {
+  .main-header-value {
+    /* bottom: 90px; */
+
+ width: 100%;
+
+ left: 0;
+   
+}
+.navbar {
+  width:100%;
+}
+form {
+  display: grid;
+  /* flex-direction: column; */
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(8, 50px);
+  /* gap: 32px; */
+  align-content: center;
+  justify-items: center;
+  width: 100%;
+  
+}
+
+.origin {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  width: 100%;
+  margin-left: 80px;
+}
+.destination {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  width: 100%;
+  margin-left: 78px;
+}
+
+.dateform {
+  grid-column: 1 / 5;
+  grid-row: 3 / 5;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px;
+}
+.min_miles {
+  grid-column: 1 / 5;
+  grid-row: 5 / 6;
+  width: 100%;
+  margin-left: 82px;
+}
+.adults {
+  grid-column: 1 / 3;
+  grid-row: 6 / 7;
+  width: 100%;
+  padding-left: 41px;
+}
+.class {
+  grid-column: 3 / 5;
+  grid-row: 6 / 7;
+  width: 100%;
+  margin-left: -91px;
+}
+.nonStop{
+  grid-column: 1 / 3;
+  grid-row: 7 / 8;
+  width: 100%;
+}
+.noti{
+  grid-column: 3 / 5;
+  grid-row: 7 / 8;
+  width: 100%;
+}
+.buttons{
+  grid-column: 3 / 4;
+  grid-row: 8 / 9;
+  width: 100%;
+}
+.search-btn{
+  grid-column: 2 / 3;
+  grid-row: 8 / 9;
+  width: 100%;
+}
+.form-container {
+  margin: 0;
+  width: 100%;
+}
+
+.origin-input, .destination-input  {
+  width: 150px;
+  height: 28px;
+  font-size: small;
+}
+.miles {
+  width: 150px!important;
+  height: 28px;
+  margin-left: 32px;
+}
+.origin-input{
+  margin-left: 30px;
+}
+.dateFrom{
+  padding-left: 15px;
+}
+#dateFrom{
+  margin-left: 5px;
+}
+.dateTo {
+  padding-left: 5px;
+}
+#dateTo {
+  margin-left: 22px;
+}
+label {
+  font-size: small;
+}
+
+.table {
+  margin-left: -30px;
+}
+.buttons {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+  justify-content: space-evenly;
+  width: 90%;
+  /* width: 500px; */
+  /* margin-left: 100px; */
+  margin-bottom: 10px;
+  margin: 0;
+}
+.btn {
+  width: 60px;
+  font-size: small;
+}
+}
